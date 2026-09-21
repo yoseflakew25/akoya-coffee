@@ -1,0 +1,35 @@
+{
+  "name": "akoya-coffee",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
+    "export": "next build",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "postinstall": "prisma skills sync || exit 0"
+  },
+  "dependencies": {
+    "@prisma/client": "^7.10.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "next": "^14.2.0",
+    "postcss": "^8.5.26",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.6",
+    "@types/node": "^26.4.0",
+    "@types/react": "^19.2.18",
+    "@typescript-eslint/eslint-plugin": "^8.68.0",
+    "@typescript-eslint/parser": "^8.68.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.3",
+    "prisma": "^8.0.0-rc.12",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.68.0"
+  }
+}
